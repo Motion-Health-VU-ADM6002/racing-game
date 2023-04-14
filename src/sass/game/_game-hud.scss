@@ -1,0 +1,94 @@
+//
+//	GAME: HUD
+//
+
+#game-hud {
+	position: absolute;
+	width: 968px;
+	height: 498px;
+	top: 0;
+	left: 0;
+
+	#gold, #silver, #bronze {
+		position: absolute;
+	    left: 50%;
+	    margin-left: -90px;
+	    top: 110px;
+	}
+
+	.hud-item, .race-starter, .hud-lap, #nice-driving {
+		position: absolute;
+	}
+
+	.hud-lap {
+		top: 40px;
+		left: 0px;
+	}
+
+	#hud-restart {
+		left: 5px;
+		top: 74px;
+		cursor: pointer;
+	}
+
+	#hud-end-game {
+		left: 5px;
+		top: 89px;
+		cursor: pointer;
+	}
+
+	#hud-options {
+		left: 15px;
+		bottom: 10px;
+		cursor: pointer;
+	}
+
+	.hud-sound {
+		left: 48px;
+		bottom: 12px;
+		cursor: pointer;
+	}
+
+	.hud-sound-muted {
+		visibility: hidden;
+	}
+
+	.hud-sound-unmuted {
+		visibility: visible;
+	}
+
+	#hud-lap-time {
+		position: absolute;
+		top: 101px;
+		left: -190px;
+		width: 90px;
+		color: white;
+		font-size: 26px;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-weight: bold;
+		background: rgba(0, 0, 0, 0.3);
+		padding-left: 9px;
+		padding-left: 9px;
+	}
+
+	.race-starter {
+		top: 112px;
+		left: 50%;
+		margin-left: -41px;
+		&#go {
+			margin-left: -95px;
+		}
+	}
+
+	#nice-driving {
+		top: 190px;
+		left: 50%;
+		margin-left: -173px;
+	}
+
+	#race-starter-bg {
+		top: 0px;
+		left: 50%;
+		margin-left: -419px;
+	}
+}

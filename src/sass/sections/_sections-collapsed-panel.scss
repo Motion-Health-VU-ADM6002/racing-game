@@ -1,0 +1,21 @@
+//
+//
+//
+
+#collapsed-panel {
+	@include Opacity(0);
+
+	#tag-line {
+		position: absolute;
+		top: 70px;
+		right: 50px;
+	}
+
+	#description {
+		position: absolute;
+		top: 115px;
+		right: 50px;
+	}
+
+
+}

@@ -1,0 +1,12 @@
+//
+//	SECTIONS: GLOBAL PANELS
+//
+
+
+#abarth-logo {
+	@include Opacity(0);
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	cursor: pointer;
+}

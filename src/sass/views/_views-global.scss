@@ -1,0 +1,13 @@
+//
+//	VIEWS:	GLOBAL
+//
+
+.view {
+	display: none;
+	@include Opacity(0);
+	width: 968px;
+	height: 498px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}

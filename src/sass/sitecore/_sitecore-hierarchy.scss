@@ -1,0 +1,77 @@
+//
+//	SITECORE: HIERARCHY
+//
+
+//	LEVEL 000
+.z
+{z-index: 0}
+
+
+//	LEVEL 005
+#game
+{z-index: 5}
+
+
+
+//	LEVEL 010
+.top-gradient
+{z-index: 10;}
+
+//	LEVEL 011
+
+
+
+//	LEVEL 012
+.z
+{z-index: 12;}
+
+//	LEVEL 013
+.z
+{z-index: 13;}
+
+//	LEVEL 014
+.z
+{z-index: 14;}
+
+
+//	LEVEL 015
+.z
+{z-index: 15;}
+
+//	LEVEL 20
+#game-hud
+{z-index: 20;}
+
+//	LEVEL 21
+.hud-item
+{z-index: 21;}
+
+//  LEVEL 22
+#view-instructions, #ready, .instructions
+{z-index: 22;}
+
+//  LEVEL 23
+#ready-1, #ready-2, #ready-3, #go, #nice-driving, .move-complete
+{z-index: 23;}
+
+//	LEVEL 40
+#inputVideo, #motion-track-overlay, #outputVideo
+{z-index: 40;}
+
+//	LEVEL 41
+#motion-control-helper, .motion-area
+{z-index: 41;}
+
+
+//	LEVEL 50
+#inner-panel, #view-end-game, #motion-line
+{z-index: 50}
+
+//	LEVEL 60
+.end-game-asset
+{z-index: 60;}
+
+
+//	LEVEL 100
+#ytClose_dc, #ctaClose_dc, #abarth-logo
+{z-index: 100;}

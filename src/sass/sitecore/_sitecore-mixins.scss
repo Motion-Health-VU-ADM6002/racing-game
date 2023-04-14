@@ -1,0 +1,73 @@
+//
+//  MIXINS
+//
+
+//  FONT SIZE
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+//  FONT SIZE
+@mixin link-color($link-color, $hover-color) {
+  .link, a:link, a:visited, a:active{color: $link-color;}
+  a:hover {color: $hover-color;}
+}
+
+//	GUTTERS
+@mixin gutters () {
+	@include sm {
+		padding-left: $padding-gutter-mobile;
+		padding-right: $padding-gutter-mobile;
+	}
+	@include md {
+		padding-left: $padding-gutter-tablet;
+		padding-right: $padding-gutter-tablet;
+	}
+	@include lg {
+		padding-left: $padding-gutter-desktop;
+		padding-right: $padding-gutter-desktop;
+	}
+}
+
+@mixin Opacity($value){
+	$IEValue: $value*100;
+	opacity: $value;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
+	filter: alpha(opacity=$IEValue);
+}
+
+
+// generic transform
+@mixin transform($transforms) {
+	-moz-transform: $transforms;
+	-o-transform: $transforms;
+	-ms-transform: $transforms;
+	-webkit-transform: $transforms;
+	transform: $transforms;
+}
+// rotate
+@mixin rotate ($deg) {
+	@include transform(rotate(#{$deg}deg));
+}
+
+// scale
+@mixin scale($scale) {
+	@include transform(scale($scale));
+}
+// translate
+@mixin translate ($x, $y) {
+	@include transform(translate($x, $y));
+}
+// skew
+@mixin skew ($x, $y) {
+	@include transform(skew(#{$x}deg, #{$y}deg));
+}
+//transform origin
+@mixin transform-origin ($origin) {
+	moz-transform-origin: $origin;
+	-o-transform-origin: $origin;
+	-ms-transform-origin: $origin;
+	-webkit-transform-origin: $origin;
+	transform-origin: $origin;
+}

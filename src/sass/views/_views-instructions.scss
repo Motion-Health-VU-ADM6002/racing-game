@@ -1,0 +1,165 @@
+//
+//	VIEW:	INSTRUCTIONS
+//
+
+#view-instructions {
+
+	background: rgba(0, 0, 0, 0.7);
+
+	.instructions {
+		@include Opacity(0);
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.move-complete {
+		position: absolute;
+		top: 168px;
+		left: 50%;
+		&#move-left-complete {
+			margin-left: -49px;
+		}
+		&#move-right-complete {
+			margin-left: -37px;
+		}
+	}
+
+
+	#move-right-text, #move-left-text {
+		position: absolute;
+		top: 128px;
+		left: 50%;
+	}
+
+	#move-right-text {
+		margin-left: -158px;
+	}
+
+	#move-left-text {
+		margin-left: -146px;
+	}
+
+	#move-right-head, #move-left-head, .move-body {
+		position: absolute;
+		top: 168px;
+		left: 50%;
+		margin-left: -43px;
+	}
+
+	#how-to-play {
+		@include Opacity(0);
+		position: absolute;
+		top: 66px;
+		left: 50%;
+		margin-left: -162px;
+	}
+
+	#options-header {
+		@include Opacity(0);
+		position: absolute;
+		top: 66px;
+		left: 50%;
+		margin-left: -162px;
+	}
+
+	#options-copy {
+		position: absolute;
+		top: 128px;
+		left: 50%;
+		margin-left: -225px;
+	}
+
+	.options-cta {
+		@include Opacity(0);
+		cursor: pointer;
+		top: 325px;
+	}
+
+	#resume {
+		position: absolute;
+		left: 50%;
+		margin-left: -185px;
+	}
+
+
+	#restart {
+		position: absolute;
+		left: 50%;
+		margin-left: -48px;
+	}
+
+
+	#end-game {
+		position: absolute;
+		left: 50%;
+		margin-left: 85px;
+	}
+
+	#cta-ready-keyboard, #cta-ready-camera {
+		position: absolute;
+		left: 50%;
+		margin-left: -77px;
+		cursor: pointer;
+	}
+
+	.cta-skip-tutorial {
+		position: absolute;
+		bottom: 7px;
+		left: 50%;
+		margin-left: -55px;
+		cursor: pointer;
+	}
+
+	#cta-ready-camera {
+		top: 244px;
+	}
+
+	#cta-ready-keyboard {
+		top: 255px;
+	}
+
+	#also-keyboard-controls {
+		position: absolute;
+		top: 128px;
+		left: 50%;
+		margin-left: -156px;
+	}
+
+	#keyboard-controls {
+		position: absolute;
+		top: 121px;
+		left: 50%;
+		margin-left: -365px;
+	}
+
+
+	#allow-camera-text {
+		position: absolute;
+		top: 128px;
+		left: 50%;
+		margin-left: -122px;
+
+	}
+
+	.car {
+		position: absolute;
+		top: 300px;
+
+		left: 50%;
+		@include Opacity(0);
+	}
+
+	#car-straight {
+		margin-left: -115px;
+		width: 230px;
+	}
+
+	#car-left, #car-right {
+		margin-left: -120px;
+		width: 240px;
+	}
+
+}

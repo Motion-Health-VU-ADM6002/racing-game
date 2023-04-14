@@ -1,0 +1,64 @@
+//
+//	GAME: MOTION CONTROLLER
+//
+
+
+#outputVideo, #motion-track-overlay {
+	position: absolute;
+	top: 30px;
+	right: 10px;
+	-o-transform : scaleX(-1);
+	-moz-transform : scaleX(-1);
+	-webkit-transform : scaleX(-1);
+	-ms-transform: scaleX(-1);
+	transform : scaleX(-1);
+	border: 1px solid white;
+	@include Opacity(0);
+}
+
+#motion-control-helper {
+	width: 160px;
+	height: 120px;
+	position: absolute;
+	right: 10px;
+	top: 30px;
+	@include Opacity(0);
+	display: none;
+
+	#motion-line {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 120px;
+		width: 1px;
+		background-color: greenyellow;
+	}
+
+	.motion-area {
+		position: absolute;
+		top: 0;
+		@include Opacity(0.5);
+		height: 120px;
+	}
+
+	#left-motion-area {
+		left: 0;
+		height: 120px;
+		width: 65px;
+		background: blue;
+	}
+
+	#center-motion-area {
+		left: 65px;
+		height: 120px;
+		width: 30px;
+		background: red;
+	}
+
+	#right-motion-area {
+		left: 95px;
+		height: 120px;
+		width: 65px;
+		background: blue;
+	}
+}

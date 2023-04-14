@@ -1,0 +1,31 @@
+//
+//	VIEWS:	END GAME
+//
+
+#view-end-game {
+
+
+
+	.end-game-asset {
+		position: absolute;
+	}
+
+	#end-game-header {
+		top: 35px;
+		left: 50%;
+		margin-left: -295px;
+	}
+
+	#end-game-cta {
+		top: 155px;
+		left: 50%;
+		margin-left: -93px;
+		cursor: pointer;
+	}
+
+	#end-game-restart {
+		bottom: 10px;
+		left: 10px;
+		cursor: pointer;
+	}
+}

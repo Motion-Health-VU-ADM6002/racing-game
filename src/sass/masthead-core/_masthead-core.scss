@@ -1,0 +1,79 @@
+//
+//	MASTHEAD CORE
+//
+
+#main-panel{
+	top: 0px;
+	left: 0px;
+	width: 968px;
+	height: 248px;
+	position: absolute;
+	background-color: black;
+	overflow: hidden;
+	border: 1px solid black;
+}
+/* Collapsed Panel*/
+#collapsed-panel{
+	top: 0px;
+	left: 0px;
+	width: 968px;
+	height: 248px;
+	//border: 1px solid #000;
+	position: absolute;
+	background: url('../images/bg-collapsed.jpg');
+	overflow: hidden;
+}
+
+#ctaExpand_dc{
+	right: 160px;
+	top: 150px;
+	position: absolute;
+	z-index: 10;
+	cursor: pointer;
+}
+/*Expanded Panel*/
+#expanded-panel{
+	left: 0px;
+	top: 0px;
+	width: 968px;
+	height: 498px;
+	//border: 1px solid white;
+	position: absolute;
+	display: none;
+	overflow: hidden;
+}
+
+
+#ctaClose_dc{
+	cursor: pointer;
+	left: 5px;
+	top: 5px;
+	position: absolute;
+	font-family: arial, sans-serif;
+	font-size: 11px;
+	letter-spacing: 0.4px;
+	span {
+		text-decoration: underline;
+	}
+	b {
+		@include transition(0.3s);
+		border: 1px solid gray;
+		padding: 1px 3px;
+		@include border-radius(2px);
+		font-size: 10px;
+	}
+	color: gray;
+	@include transition(0.3s);
+	&:hover {
+		b {
+			border: 1px solid lightgrey;
+		}
+		color: lightgrey;
+	}
+}
+
+/* #ytClose_dc {
+	position: absolute;
+	top: 0px !important;
+	left: 896px !important;
+} */
