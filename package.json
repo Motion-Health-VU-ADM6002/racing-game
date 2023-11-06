@@ -1,0 +1,11 @@
+{
+  "name": "racing-ar",
+  "version": "1.0.0",
+  "description": "Fiat YouTube Masthead Game [ComputerVision Face Tracking in JS]",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
